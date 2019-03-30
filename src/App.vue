@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FormDenuncia/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormDenuncia from './components/FormDenuncia.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    FormDenuncia
   }
 }
 </script>
@@ -22,7 +21,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 40px;
+  background:  #F9FAFB;
+}
+
+input,select, textarea {
+  border: none !important;
 }
 </style>
